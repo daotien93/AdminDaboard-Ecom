@@ -1,14 +1,14 @@
-import React from 'react';
-import { Route, RouteProps } from 'react-router';
-import { JsxEmit } from 'typescript';
-import Login from '../pages/Acconut/Login';
+import { Route } from 'react-router-dom';
+import Login from '../pages/Acconut/Login'
+import React, { ReactNode } from 'react';
 
-export const PrivateRoute = ({
-    children,
-    ...rest
-}: RouteProps): JSX.Element => {
-    return (
-        <Route {...rest} render={() => (false ? children : <Login />)}></Route>
-    )
+interface Props {
+    children?: ReactNode
 }
 
+export const PrivateRoute = ({
+  children,
+  ...rest
+}: Props): JSX.Element => {
+  return <Route {...rest} render={() => (true ? children : <Login />)}></Route>;
+};

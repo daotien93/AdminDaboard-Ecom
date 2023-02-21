@@ -1,20 +1,24 @@
-import React from 'react';
+import './App.css';
 import './styles/sb-admin-2.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Acconut/Login';
-import Admin from './pages/Admin/Admin';
 
-const App = () => {
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+
+import Admin from './pages/Admin/Admin';
+import { PrivateRoute } from './components';
+import React from 'react';
+
+function App() {
   return (
     <div className='App' id='wrapper'>
       <Router>
-        <Routes>
-          <Route path='' element={<Admin />} />
-          <Route path='/login' element={<Login />} />
-        </Routes>
+        <Switch>
+          <PrivateRoute>
+            <Admin />
+          </PrivateRoute>
+        </Switch>
       </Router>
     </div>
   );
-};
+}
 
 export default App;
