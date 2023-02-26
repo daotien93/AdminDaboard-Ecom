@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom';
-import Login from '../pages/Acconut/Login'
+import { Login } from '../pages/Acconut/Login'
 import React, { ReactNode } from 'react';
 import { AccountState } from '../store/account/types';
 import { useSelector } from 'react-redux';
