@@ -9,7 +9,7 @@ interface Props {
   children?: ReactNode
 }
 
-export const AcconutRoute = ({
+export const AcconutRoute:any = ({
   children,
   ...rest
 }: Props): JSX.Element => {

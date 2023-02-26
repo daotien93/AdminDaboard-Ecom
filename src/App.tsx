@@ -14,10 +14,10 @@ function App() {
     <div className='App' id='wrapper'>
       <Router>
         <Switch>
-          <AcconutRoute>
+          <AcconutRoute path='/login'>
             <Login />
           </AcconutRoute>
-          <PrivateRoute>
+          <PrivateRoute path='/'>
             <Admin />
           </PrivateRoute>
         </Switch>

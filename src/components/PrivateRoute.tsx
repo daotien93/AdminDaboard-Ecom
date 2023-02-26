@@ -9,7 +9,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const PrivateRoute = ({
+export const PrivateRoute:any = ({
   children,
   ...rest
 }: Props): JSX.Element => {
