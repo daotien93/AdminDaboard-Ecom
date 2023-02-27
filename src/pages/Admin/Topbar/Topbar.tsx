@@ -4,6 +4,7 @@ import { logout } from '../../../store/account/actions';
 
 export const TopBar = () => {
   const [isShowProfileDropdown, setIsShowProfileDropdown] = useState(false);
+  
   const dispatch = useDispatch();
   return (
     <nav className='navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow'>
