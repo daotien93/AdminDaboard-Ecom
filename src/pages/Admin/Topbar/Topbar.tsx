@@ -13,8 +13,6 @@ export const TopBar = () => {
     (state) => state.account.user
   ) as AuthenticatedUser;
 
-  console.log("Log user" + user);
-
   return (
     <nav className='navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow'>
       {/* Sidebar Toggle (Topbar) */}
