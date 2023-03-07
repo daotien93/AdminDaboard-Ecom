@@ -4,9 +4,11 @@ import { accountReducer } from './account/reducers';
 import thunkMiddleware from 'redux-thunk';
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/es/storage';
+import { usersReducer } from './users/reducers';
 
 const rootReducer = combineReducers({
     account: accountReducer,
+    users: usersReducer,
 });
 
 const persistConfig = {

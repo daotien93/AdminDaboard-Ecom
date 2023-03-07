@@ -1,8 +1,6 @@
 import './App.css';
 import './styles/sb-admin-2.min.css';
-
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
-
 import Admin from './pages/Admin/Admin';
 import { PrivateRoute } from './components';
 import React from 'react';

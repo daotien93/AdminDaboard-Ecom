@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const LeftMenu = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -12,7 +13,7 @@ export const LeftMenu = () => {
       }
       id='accordionSidebar'
     >
-      <a
+      <Link to='/'
         className='sidebar-brand d-flex align-items-center justify-content-center'
         href='index.html'
       >
@@ -22,7 +23,7 @@ export const LeftMenu = () => {
         <div className='sidebar-brand-text mx-3'>
           SB Admin <sup>2</sup>
         </div>
-      </a>
+      </Link>
       {/* Divider */}
       <hr className='sidebar-divider my-0' />
       {/* Nav Item - Dashboard */}
@@ -38,18 +39,17 @@ export const LeftMenu = () => {
       <div className='sidebar-heading'>Interface</div>
       {/* Nav Item - Pages Collapse Menu */}
       <li className='nav-item'>
-        <a
+        <Link
           className={'nav-link' + (isComponentShow ? '' : ' collapsed')}
           href='#'
           data-toggle='collapse'
           data-target='#collapseTwo'
           aria-expanded={isComponentShow ? 'true' : 'false'}
           aria-controls='collapseTwo'
-          onClick={() => setIsComponentShow(!isComponentShow)}
-        >
+          onClick={() => setIsComponentShow(!isComponentShow)} to={''}        >
           <i className='fas fa-fw fa-cog' />
           <span>Components</span>
-        </a>
+        </Link>
         <div
           id='collapseTwo'
           className={'collapse' + (isComponentShow ? ' show' : '')}
@@ -58,9 +58,9 @@ export const LeftMenu = () => {
         >
           <div className='bg-white py-2 collapse-inner rounded'>
             <h6 className='collapse-header'>Custom Components:</h6>
-            <a className='collapse-item' href='buttons.html'>
-              Buttons
-            </a>
+            <Link className='collapse-item' href='buttons.html' to='/users'>
+              Users
+            </Link>
             <a className='collapse-item' href='cards.html'>
               Cards
             </a>
