@@ -11,6 +11,7 @@ const initialState: UsersState = {
     page: 1,
     total: 0,
     loading: false,
+    pageSize: 0,
     deletedCount: 0,
     error: null,
 };
@@ -32,6 +33,7 @@ const usersReducer = (
                 items: action.payload.items,
                 total: action.payload.total,
                 page: action.payload.page,
+                pageSize: action.payload.pageSize,
                 loading: false,
                 error: null,
             };

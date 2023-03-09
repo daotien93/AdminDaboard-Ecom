@@ -32,6 +32,7 @@ export interface UsersState {
     page: number;
     total: number;
     loading: boolean;
+    pageSize: number;
     deletedCount: number;
     error: string | null;
 }

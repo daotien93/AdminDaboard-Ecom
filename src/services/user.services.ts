@@ -2,7 +2,6 @@ import {  api } from '../helpers';
 import { IPagination } from '../helpers/pagination';
 import { IUser } from '../store/users/types';
 
-
 const login = async (email: string, password: string) => {
   const body = { email, password };
   return await api.post('/v1/auth', body).then((response) => {
