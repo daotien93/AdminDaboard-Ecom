@@ -69,9 +69,8 @@ export const LeftMenu = () => {
       </li>
       {/* Nav Item - Utilities Collapse Menu */}
       <li className='nav-item'>
-        <a
+        <p
           className='nav-link collapsed'
-          href='#'
           data-toggle='collapse'
           data-target='#collapseUtilities'
           aria-expanded='true'
@@ -79,7 +78,7 @@ export const LeftMenu = () => {
         >
           <i className='fas fa-fw fa-wrench' />
           <span>Utilities</span>
-        </a>
+        </p>
         <div
           id='collapseUtilities'
           className='collapse'
@@ -109,9 +108,8 @@ export const LeftMenu = () => {
       <div className='sidebar-heading'>Addons</div>
       {/* Nav Item - Pages Collapse Menu */}
       <li className='nav-item'>
-        <a
+        <p
           className='nav-link collapsed'
-          href='#'
           data-toggle='collapse'
           data-target='#collapsePages'
           aria-expanded='true'
@@ -119,7 +117,7 @@ export const LeftMenu = () => {
         >
           <i className='fas fa-fw fa-folder' />
           <span>Pages</span>
-        </a>
+        </p>
         <div
           id='collapsePages'
           className='collapse'

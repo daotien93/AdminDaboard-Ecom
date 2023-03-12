@@ -168,6 +168,7 @@ export const TopBar = () => {
                 <img
                   className='rounded-circle'
                   src='img/undraw_profile_1.svg'
+                  alt=''
                 />
                 <div className='status-indicator bg-success' />
               </div>
@@ -184,6 +185,7 @@ export const TopBar = () => {
                 <img
                   className='rounded-circle'
                   src='img/undraw_profile_2.svg'
+                  alt=''
                 />
                 <div className='status-indicator' />
               </div>
@@ -200,6 +202,7 @@ export const TopBar = () => {
                 <img
                   className='rounded-circle'
                   src='img/undraw_profile_3.svg'
+                  alt=''
                 />
                 <div className='status-indicator bg-warning' />
               </div>
@@ -216,6 +219,7 @@ export const TopBar = () => {
                 <img
                   className='rounded-circle'
                   src='https://source.unsplash.com/Mv9hjnEUHR4/60x60'
+                  alt=''
                 />
                 <div className='status-indicator bg-success' />
               </div>
@@ -251,7 +255,8 @@ export const TopBar = () => {
             <span className='mr-2 d-none d-lg-inline text-gray-600 small'>
               {user?.first_name}
             </span>
-            <img className='img-profile rounded-circle' src={user?.avatar} />
+            <img className='img-profile rounded-circle' src={user?.avatar} alt='' />
+            
           </a>
           {/* Dropdown - User Information */}
           <div

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 
 const Home = () => {
     return (
@@ -7,12 +7,12 @@ const Home = () => {
                 {/* Page Heading */}
                 <div className='d-sm-flex align-items-center justify-content-between mb-4'>
                     <h1 className='h3 mb-0 text-gray-800'>Dashboard</h1>
-                    <a
+                    <p
                         className='d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm'
                     >
                         <i className='fas fa-download fa-sm text-white-50' /> Generate
                         Report
-                    </a>
+                    </p>
                 </div>
                 {/* Content Row */}
                 <div className='row'>
@@ -124,7 +124,7 @@ const Home = () => {
                                     Earnings Overview
                                 </h6>
                                 <div className='dropdown no-arrow'>
-                                    <a
+                                    <p
                                         className='dropdown-toggle'
 
                                         role='button'
@@ -134,7 +134,7 @@ const Home = () => {
                                         aria-expanded='false'
                                     >
                                         <i className='fas fa-ellipsis-v fa-sm fa-fw text-gray-400' />
-                                    </a>
+                                    </p>
                                     <div
                                         className='dropdown-menu dropdown-menu-right shadow animated--fade-in'
                                         aria-labelledby='dropdownMenuLink'
@@ -142,16 +142,16 @@ const Home = () => {
                                         <div className='dropdown-header'>
                                             Dropdown Header:
                                         </div>
-                                        <a className='dropdown-item' >
+                                        <p className='dropdown-item' >
                                             Action
-                                        </a>
-                                        <a className='dropdown-item' >
+                                        </p>
+                                        <p className='dropdown-item' >
                                             Another action
-                                        </a>
+                                        </p>
                                         <div className='dropdown-divider' />
-                                        <a className='dropdown-item' >
+                                        <p className='dropdown-item' >
                                             Something else here
-                                        </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@ const Home = () => {
                                     Revenue Sources
                                 </h6>
                                 <div className='dropdown no-arrow'>
-                                    <a
+                                    <p
                                         className='dropdown-toggle'
 
                                         role='button'
@@ -182,7 +182,7 @@ const Home = () => {
                                         aria-expanded='false'
                                     >
                                         <i className='fas fa-ellipsis-v fa-sm fa-fw text-gray-400' />
-                                    </a>
+                                    </p>
                                     <div
                                         className='dropdown-menu dropdown-menu-right shadow animated--fade-in'
                                         aria-labelledby='dropdownMenuLink'
@@ -190,16 +190,16 @@ const Home = () => {
                                         <div className='dropdown-header'>
                                             Dropdown Header:
                                         </div>
-                                        <a className='dropdown-item' >
+                                        <p className='dropdown-item' >
                                             Action
-                                        </a>
-                                        <a className='dropdown-item' >
+                                        </p>
+                                        <p className='dropdown-item' >
                                             Another action
-                                        </a>
+                                        </p>
                                         <div className='dropdown-divider' />
-                                        <a className='dropdown-item' >
+                                        <p className='dropdown-item' >
                                             Something else here
-                                        </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -387,29 +387,24 @@ const Home = () => {
                                         className='img-fluid px-3 px-sm-4 mt-3 mb-4'
                                         style={{ width: '25rem' }}
                                         src='img/undraw_posting_photo.svg'
+                                        alt=''
                                     />
                                 </div>
                                 <p>
                                     Add some quality, svg illustrations to your project
                                     courtesy of{' '}
-                                    <a
-                                        target='_blank'
-                                        rel='nofollow'
-
+                                    <span
                                     >
                                         unDraw
-                                    </a>
+                                    </span>
                                     , a constantly updated collection of beautiful svg
                                     images that you can use completely free and without
                                     attribution!
                                 </p>
-                                <a
-                                    target='_blank'
-                                    rel='nofollow'
-
+                                <p
                                 >
                                     Browse Illustrations on unDraw →
-                                </a>
+                                </p>
                             </div>
                         </div>
                         {/* Approach */}
